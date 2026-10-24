@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio | ProErMi</title>
+    <link href="./output.css" rel="stylesheet">
+    <style>
+    .star{clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+    </style>
+</head>
+<body class="font-sans bg-cream text-ink overflow-x-hidden">
+<div id="progress" class="fixed left-0 top-0 z-60 h-1 w-full bg-[#FF6B5A]" style="transform-origin:0 50%"></div>
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 px-2">
+        <nav class="bg-ink rounded-b-3xl border-2 border-t-0 border-sky-500 px-5">
+            <div class="flex items-center justify-between h-14">
+                <a href="#home" class="flex items-center" aria-label="Beranda">
+                    <span class="flex h-9 w-9 md:h-10 md:w-10 items-center justify-center rounded-full bg-brand text-ink font-extrabold text-xl ring-2 ring-white/25">
+                        S
+                    </span>
+                </a>
+
+                <ul class="hidden md:flex items-center gap-8 lg:gap-10 text-white text-lg font-medium">
+                    <li><a href="#home" class="hover:text-brand transition-colors">Home</a></li>
+                    <li><a href="#about" class="hover:text-brand transition-colors">About</a></li>
+                    <li><a href="#project" class="hover:text-brand transition-colors">Project</a></li>
+                    <li><a href="#contact" class="hover:text-brand transition-colors">Contact</a></li>
+                </ul>
+
+                <button id="menu-btn" class="md:hidden text-white p-2" aria-label="Buka menu" aria-expanded="false">
+                    <svg id="icon-open" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg id="icon-close" class="h-7 w-7 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18" />
+                    </svg>
+                </button>
+            </div>
+
+            <ul id="mobile-menu" class="hidden md:hidden flex-col gap-1 pb-4 text-white text-lg font-medium">
+                <li><a href="#home" class="block py-2 hover:text-brand">Home</a></li>
+                <li><a href="#about" class="block py-2 hover:text-brand">About</a></li>
+                <li><a href="#project" class="block py-2 hover:text-brand">Project</a></li>
+                <li><a href="#contact" class="block py-2 hover:text-brand">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main id="home" class="relative bg-brand">
+        <span class="star absolute left-6.5 top-8 h-12 w-12 bg-pinky"></span>
+        <section class="mx-auto max-w-6xl px-6 md:px-10 py-12 md:py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-12 md:gap-8">
+            <div class="order-2 md:order-1 text-center md:text-left">
+                <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Hello, I'm<br> <span class="bg-white px-1">Nur Syauqi Izzudin</span></h1>
+                <p class="mt-3 text-sm sm:text-base font-medium text-ink/70">Mahasiswa Sistem Informasi · Web Developer</p>
+                <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#contact" class="rounded-full border-2 border-ink bg-sky px-6 py-2.5 font-bold shadow-[4px_4px_0_#111] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0_#111]">Contact Me</a>
+                    <a href="#project" class="rounded-full bg-ink px-6 py-2.5 text-white font-semibold shadow-[4px_4px_0_#00C9AE] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0_#00C9AE]">My Project</a>
+                </div>
+            </div>
+
+            <div class="order-1 md:order-2 relative flex justify-center md:justify-end">
+                <span class="star absolute -bottom-16 z-10 right-6 h-14 w-14 bg-[#FF6B5A] md:-right-45 md:-bottom-8"></span>
+                <div class="relative w-64 sm:w-72 md:w-80 lg:w-88">
+                    <figure class="aspect-4/5 overflow-hidden rounded-md border-2 border-ink bg-teal shadow-[10px_10px_0_#111]">
+                        <img src="img/person.jpeg" alt="hero-section image" class="h-full w-full object-cover">
+                    </figure>
+                </div>
+
+                <ul class="absolute -right-1 sm:right-0 lg:-right-1/3 top-1/2 -translate-y-1/2 flex flex-col gap-3">
+                    <li>
+                        <a href="https://www.instagram.com/syauqiizzn?igsh=YnUzNGJ6ZDV0MW51" target="_blank" class="flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-white text-ink/70 shadow-md transition hover:scale-110 hover:text-ink"> 
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="5" />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/share/1Cif2bv5W4/" target="_blank" class="flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-white text-ink/70 shadow-md transition hover:scale-110 hover:text-ink">
+                        <svg
+                            role="img"
+                            width="20"
+                            class="fill-current"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <title>Facebook</title>
+                            <path
+                            d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+                            />
+                        </svg>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@ashxinn.tch?_r=1&_t=ZS-95KOfuQ0xDU" target="_blank" class="flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-white text-ink/70 shadow-md transition hover:scale-110 hover:text-ink">
+                            <svg
+                                role="img"
+                                width="20"
+                                class="fill-current"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>X</title>
+                                <path
+                                d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@ashxinn.tch?_r=1&_t=ZS-95KOfuQ0xDU" target="_blank" class="flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-white text-ink/70 shadow-md transition hover:scale-110 hover:text-ink">
+                            <svg
+                            role="img"
+                            width="20"
+                            class="fill-current"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <title>TikTok</title>
+                            <path
+                                d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                            />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=https://discordapp.com/users/1117281420784717835" target="_blank" class="flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-white text-ink/70 shadow-md transition hover:scale-110 hover:text-ink">
+                            <svg
+                            role="img"
+                            width="20"
+                            class="fill-current"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <title>Discord</title>
+                            <path
+                                d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"
+                            />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- TOOL STRIP -->
+    <div class="bg-ink py-4 text-white">
+        <ul class="mx-auto max-w-6xl flex flex-wrap justify-around gap-x-6 gap-y-2 px-6 text-lg font-semibold md:text-2xl">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>PHP</li><li>TailwindCSS</li>
+        </ul>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="mx-auto max-w-6xl px-4 py-16 md:px-10">
+        <h2 class="text-3xl font-extrabold md:text-5xl"><span class="border-b-4 border-ink">About Me</span> ☺</h2>
+        <div class="mt-8 overflow-hidden rounded-3xl bg-[#1170E8] text-white">
+            <div class="grid grid-cols-3 divide-x-2 divide-white/30 border-b-2 border-white/30 text-center">
+                <div class="p-4 "><p class="text-2xl font-extrabold md:text-4xl ">7+</p><p class="text-xs md:text-sm">Proyek</p></div>
+                <div class="p-4 "><p class="text-2xl font-extrabold md:text-4xl ">5+</p><p class="text-xs md:text-sm">Sertifikat</p></div>
+                <div class="p-4 "><p class="text-2xl font-extrabold md:text-4xl ">2026</p><p class="text-xs md:text-sm">Angkatan</p></div>
+            </div>
+            <div class="grid items-center gap-10 p-6 md:grid-cols-[280px_1fr] md:gap-12 md:p-10">
+                <figure class="group relative mx-auto w-56 -rotate-2 transition duration-300 hover:rotate-0 sm:w-64 md:w-full">
+                    <span class="absolute -top-3 left-1/2 z-20 h-6 w-20 -translate-x-1/2 rotate-3 border-ink/40 bg-pinky/80"></span>
+                    <span class="star absolute -bottom-4 -right-5 rotate-45 z-20 h-14 w-14 bg-[#FF6B5A]"></span>
+                    <div class="border-2 border-ink bg-white p-2.5 pb-0 text-ink shadow-[8px_8px_0_#111]">
+                        <div class="aspect-4/5 overflow-hidden border-2 border-ink bg-teal">
+                            <img src="img/about-me.jpeg" alt="about-me image" class="w-full object-cover">
+                        </div>
+                        <figcaption class="px-3 py-3 ">
+                            <p class="font-extrabold leading-tight text-sm">Nur Syauqi Izzudin <span class="text-xl">☺</span></p>
+                            <p class="font-mono text-xs text-ink/60">NIM: 26051214040</p>
+                            <p class="font-mono text-xs text-ink/60">Prodi: S1 Sistem Informasi</p>
+                        </figcaption>
+                    </div>
+                </figure>
+                <div>
+                    <p class="font-semibold text-justify indent-9">Halo! Perkenalkan Aku Nur Syauqi Izzudin, Mahasiswa S1 Sistem Informasi dari Universitas Negeri Surabaya (UNESA) yang ingin berkarier menjadi Analyst Data dan aku juga jago ngoding meskipun masih pemula. Aku suka membuat sebuah website atau aplikasi sederhana yang bisa dipakai orang lain. Belakangan ini Aku lagi seru-serunya belajar framework dari CSS dan Javascript lewat proyek-proyek kecil. Harapannya, kemampuanku terus bertambah sampai bisa membangun sebuah produk/karya digital yang benar-benar berguna.</p>
+                    <dl class="mt-5 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-sm md:text-base">
+                        <dt class="font-bold text-brand">Nama</dt><dd>Nur Syauqi Izzudin</dd>
+                        <dt class="font-bold text-brand">NIM</dt><dd>26051214040</dd>
+                        <dt class="font-bold text-brand">Prodi</dt><dd>S1 Sistem Informasi</dd>
+                        <dt class="font-bold text-brand">Hobi</dt><dd>Ngoding, Main Game, Baca Komik</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT I CAN DO | SKILLS SECTION -->
+    <section id="skills" class="bg-[#EB750F] px-4 py-16">
+        <div class="mx-auto max-w-5xl">
+            <span class="absolute left-1/2 z-0 w-32 h-10 -translate-1 -rotate-3 bg-brand md:w-56 md:h-16 md:-translate-2"></span>
+            <h2 class="relative z-10 text-center text-3xl font-extrabold md:text-5xl">What I <span class="text-white">Can Do</span></h2>
+            <div class="mt-14 grid gap-14 md:grid-cols-4 md:gap-8">
+                <article class="relative md:col-span-2 rounded-2xl border-2 border-ink bg-[#A259FF] p-6 pt-12 text-white shadow-[8px_8px_0_#111]">
+                    <span class="absolute -top-8 left-1/2 flex h-16 w-16 -translate-x-1/2 items-center justify-center rounded-full bg-[#0DCE82] text-4xl font-extrabold">1</span>
+                    <div class="flex items-center gap-3">
+                        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border-2 border-ink bg-white text-ink"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg></span>
+                        <h3 class="text-xl font-extrabold md:text-2xl">Web Development</h3>
+                    </div>
+                    <p class="mt-2 text-sm font-semibold text-justify indent-9">Saya bisa membangun sebuah website yang rapi, cepat, dan nyaman dibuka di perangkat apa pun. Dengan HTML, CSS, JavaScript, dan beberapa framework. saya mengubah desain menjadi halaman nyata yang responsif dan mudah digunakan.</p>
+                    <p class="mt-4 flex flex-wrap gap-2 text-xs font-bold"><span class="rounded bg-ink px-2 py-1">HTML</span><span class="rounded bg-ink px-2 py-1">CSS</span><span class="rounded bg-ink px-2 py-1">JavaScript</span><span class="rounded bg-ink px-2 py-1">TailwindCSS</span><span class="rounded bg-ink px-2 py-1">Bootstrap</span><span class="rounded bg-ink px-2 py-1">ReactJS</span><span class="rounded bg-ink px-2 py-1">NodeJS</span><span class="rounded bg-ink px-2 py-1">ReactJS</span><span class="rounded bg-ink px-2 py-1">Visual Studio Code</span></p>
+                </article>
+                <article class="relative md:col-span-2 rounded-2xl border-2 border-ink bg-[#A259FF] p-6 pt-12 text-white shadow-[8px_8px_0_#111]">
+                    <span class="absolute -top-8 left-1/2 flex h-16 w-16 -translate-x-1/2 items-center justify-center rounded-full bg-[#0DCE82] text-4xl font-extrabold">2</span>
+                    <div class="flex items-center gap-3">
+                        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border-2 border-ink bg-white text-ink">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 20l4-1 11-11a2.1 2.1 0 0 0-3-3L5 16l-1 4zM14 7l3 3"/></svg>
+                        </span>
+                        <h3 class="text-xl font-extrabold md:text-2xl">UI/UX Design & Tools</h3>
+                    </div>
+                    <p class="mt-2 text-sm font-semibold text-justify indent-9">Saya bisa merancang sebuah desain dan tampilan aplikasi/web yang sederhana dan enak dipakai, mulai dari menggunakan Canva sampai prototype di Figma. saya juga masih mengembangkan keterampilan tersebut agar dapat menciptakan pengalaman yang baik bagi pengguna</p>
+                    <p class="mt-4 flex flex-wrap gap-2 text-xs font-bold"><span class="rounded bg-ink px-2 py-1">Figma</span><span class="rounded bg-ink px-2 py-1">Canva</span><span class="rounded bg-ink px-2 py-1">Adobe Photoshop</span></p>
+                </article>
+                <article class="relative md:col-span-2 md:col-start-2 rounded-2xl border-2 border-ink bg-[#A259FF] p-6 pt-12 text-white shadow-[8px_8px_0_#111]">
+                    <span class="absolute -top-8 left-1/2 flex h-16 w-16 -translate-x-1/2 items-center justify-center rounded-full bg-[#0DCE82] text-4xl font-extrabold">3</span>
+                    <div class="flex items-center gap-3">
+                        <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border-2 border-ink bg-white text-ink"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path stroke-linecap="round" d="M10.5 18.5h3"/></svg></span>
+                        <h3 class="text-xl font-extrabold md:text-2xl">Android Development</h3>
+                    </div>
+                    <p class="mt-2 text-sm font-semibold text-justify indent-9">Saya bisa mengembangkan sebuah aplikasi Android yang sederhana dan mudah digunakan dengan Kotlin dan Android Studio. Fokus saya adalah membuat fitur yang berguna dengan tampilan sederhana dan performa yang stabil.</p>
+                    <p class="mt-4 flex flex-wrap gap-2 text-xs font-bold"><span class="rounded bg-ink px-2 py-1">Flutter</span><span class="rounded bg-ink px-2 py-1">Dart</span><span class="rounded bg-ink px-2 py-1">Kotlin</span><span class="rounded bg-ink px-2 py-1">Android Studio</span></p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <section id="project" class="mx-auto max-w-6xl px-4 py-16 md:px-10">
+        <h2 class="text-center text-3xl font-extrabold md:text-5xl">My <span class="border-b-4 border-ink">Project</span></h2>
+        <div class="mt-10 grid gap-8 md:grid-cols-3">
+            <article class="border-2 border-ink bg-white p-5 shadow-[8px_8px_0_#00C9AE]">
+                <div class="flex aspect-video items-center justify-center bg-neutral-200 text-sm text-ink/50">
+                    <img src="img/project-1.png" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="mt-4 flex items-start justify-between gap-3">
+                    <div><h3 class="text-lg font-extrabold">HG'S Coffee E-Commerce Website</h3><p class="text-sm text-ink/60">HTML · CSS · TailwindCSS · JavaScript</p></div>
+                    <a href="https://hgscoffee.vercel.app/" aria-label="Lihat bukti" class="border-2 border-ink px-2 py-1 text-sm font-bold hover:bg-brand">↗</a>
+                </div>
+                <p class="mt-2 text-sm">Website e-commerce untuk bisnis kopi yang menampilkan berbagai produk dan memberikan pengalaman berbelanja secara online melalui tampilan yang menarik dan responsif.</p>
+            </article>
+            <article class="border-2 border-ink bg-white p-5 shadow-[8px_8px_0_#00C9AE]">
+                <div class="flex aspect-video items-center justify-center bg-neutral-200 text-sm text-ink/50">
+                    <img src="img/project-2.png" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="mt-4 flex items-start justify-between gap-3">
+                    <div><h3 class="text-lg font-extrabold">SMASA School Website</h3><p class="text-sm text-ink/60">HTML · CSS  · JavaScript</p></div>
+                    <a href="https://smasa-website.vercel.app/" aria-label="Lihat bukti" class="border-2 border-ink px-2 py-1 text-sm font-bold hover:bg-brand">↗</a>
+                </div>
+                <p class="mt-2 text-sm">Website sekolah yang dirancang untuk menyajikan informasi seputar sekolah melalui tampilan yang informatif, terstruktur, dan mudah diakses oleh pengguna.</p>
+            </article>
+            <article class="border-2 border-ink bg-white p-5 shadow-[8px_8px_0_#00C9AE]">
+                <div class="flex aspect-video items-center justify-center bg-neutral-200 text-sm text-ink/50">
+                    <img src="img/project-3.png" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="mt-4 flex items-start justify-between gap-3">
+                    <div><h3 class="text-lg font-extrabold">Travel Landing Page</h3><p class="text-sm text-ink/60">HTML · CSS  · SASS</p></div>
+                    <a href="https://proermi.github.io/Travel-Website-UK/" aria-label="Lihat bukti" class="border-2 border-ink px-2 py-1 text-sm font-bold hover:bg-brand">↗</a>
+                </div>
+                <p class="mt-2 text-sm">Landing page bertema perjalanan yang menampilkan destinasi wisata dengan desain visual menarik untuk memberikan inspirasi dan informasi kepada calon wisatawan.</p>
+            </article>
+            <article class="border-2 border-ink bg-white p-5 shadow-[8px_8px_0_#00C9AE]">
+                <div class="flex aspect-video items-center justify-center bg-neutral-200 text-sm text-ink/50">
+                    <img src="img/project-4.png" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="mt-4 flex items-start justify-between gap-3">
+                    <div><h3 class="text-lg font-extrabold">Tribute Landing Page</h3><p class="text-sm text-ink/60">HTML · CSS</p></div>
+                    <a href="https://proermi.github.io/Tribute-Page/" aria-label="Lihat bukti" class="border-2 border-ink px-2 py-1 text-sm font-bold hover:bg-brand">↗</a>
+                </div>
+                <p class="mt-2 text-sm">Halaman web penghormatan yang menyajikan informasi dan profil tokoh tertentu dalam susunan konten yang sederhana, rapi, dan mudah dibaca.</p>
+            </article>
+            <article class="border-2 border-ink bg-white p-5 shadow-[8px_8px_0_#00C9AE]">
+                <div class="flex aspect-video items-center justify-center bg-neutral-200 text-sm text-ink/50">
+                    <img src="img/project-5.png" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="mt-4 flex items-start justify-between gap-3">
+                    <div><h3 class="text-lg font-extrabold">GameTech E-commerce Landing Page</h3><p class="text-sm text-ink/60">HTML · CSS  · Bootstrap 5</p></div>
+                    <a href="https://proermi.github.io/GameTech-WebsiteLandingPage/" aria-label="Lihat bukti" class="border-2 border-ink px-2 py-1 text-sm font-bold hover:bg-brand">↗</a>
+                </div>
+                <p class="mt-2 text-sm">Landing page e-commerce bertema nuansa gaming yang menampilkan produk teknologi dan gaming dengan tata letak menarik untuk mendukung promosi produk secara online.</p>
+            </article>
+            <article class="border-2 border-ink bg-white p-5 shadow-[8px_8px_0_#00C9AE]">
+                <div class="flex aspect-video items-center justify-center bg-neutral-200 text-sm text-ink/50">
+                    <img src="img/project-6.png" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="mt-4 flex items-start justify-between gap-3">
+                    <div><h3 class="text-lg font-extrabold">Slider Image</h3><p class="text-sm text-ink/60">HTML · CSS  · JavaScript</p></div>
+                    <a href="https://proermi.github.io/Slider-Image/" aria-label="Lihat bukti" class="border-2 border-ink px-2 py-1 text-sm font-bold hover:bg-brand">↗</a>
+                </div>
+                <p class="mt-2 text-sm">Komponen galeri gambar interaktif yang memungkinkan pengguna melihat beberapa gambar secara bergantian melalui slider dengan memanfaatkan JavaScript.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="bg-[#0DCE82] px-4 py-16">
+        <div class="relative mx-auto max-w-3xl border-2 border-ink bg-white p-8 text-center shadow-[8px_8px_0_#111] details-content:p-12">
+            <span class="star absolute -top-6 right-8 h-12 w-12 bg-pinky"></span>
+            <h2 class="text-2xl font-extrabold md:text-4xl">Let’s work together!</h2>
+            <p class="mt-2 text-ink/70">Punya pertanyaan atau ide proyek? Hubungi saya.</p>
+            <div class="mt-6 grid gap-3 text-left md:grid-cols-3">
+                <a href="mailto:nursyauqi87@gmail.com" class="flex items-center gap-3 rounded-xl border-2 border-ink p-3">
+                    <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border-2 border-ink bg-brand"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path stroke-linecap="round" stroke-linejoin="round" d="M3 7l9 6 9-6"/></svg></span>
+                    <span class="min-w-0"><span class="block text-xs font-bold text-ink/50">EMAIL</span><span class="block break-all text-sm font-bold">nursyauqi87@gmail.com</span></span>
+                </a>
+                <a href="https://github.com/ProErMi" target="_blank" class="flex items-center gap-3 rounded-xl border-2 border-ink p-3">
+                    <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border-2 border-ink bg-ink text-white"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.08 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></span>
+                    <span class="min-w-0"><span class="block text-xs font-bold text-ink/50">GITHUB</span><span class="block break-all text-sm font-bold">github.com/ProErMi</span></span>
+                </a>
+                <a href="https://www.linkedin.com/in/syauqi-izzudin-1333a1441/?isSelfProfile=true" class="flex items-center gap-3 rounded-xl border-2 border-ink p-3">
+                    <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border-2 border-ink bg-[#0A66C2] text-white"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></span>
+                    <span class="min-w-0"><span class="block text-xs font-bold text-ink/50">LINKEDIN</span><span class="block break-all text-sm font-bold">linkedin.com/in/syauqi-izzudin</span></span>
+                </a>
+            </div>
+            <form id="form-kontak" onsubmit="kirimPesan(event)" class="mt-8 border-t-2 border-dashed border-ink/30 pt-8 text-left">
+                <h3 class="mb-4 text-center text-lg font-extrabold">Kirim Pesan Disini</h3>
+                <div class="grid gap-4">
+                    <label class="block text-sm font-bold">Nama 
+                        <input type="text" name="nama" required placeholder="Masukkan Nama Anda" class="mt-1 w-full rounded-lg border-2 border-ink bg-white px-4 py-2.5 text-sm font medium outline-none transition focus:bg-brand/20 focus:shadow-[3px_3px_0_#111]">
+                    </label>
+    
+                    <label class="block text-sm font-bold">Email
+                        <input type="email" name="email" required placeholder="Masukkan Email Anda" class="mt-1 w-full rounded-lg border-2 border-ink bg-white px-4 py-2.5 text-sm font medium outline-none transition focus:bg-brand/20 focus:shadow-[3px_3px_0_#111]">
+                    </label>
+                    <label class="block text-sm font-bold">Pesan
+                        <textarea name="pesan" rows="6" required placeholder="Tulis Pesan di sini..." class="mt-1 resize-y w-full rounded-lg border-2 border-ink bg-white px-4 py-2.5 text-sm font medium outline-none transition focus:bg-brand/20 focus:shadow-[3px_3px_0_#111]"></textarea>
+                    </label>
+                </div>
+            </form>
+            <div class="mt-6 flex flex-wrap justify-center gap-4 ">
+                <button type="submit" form="form-kontak" class="rounded-full border-2 border-ink bg-sky px-6 py-2.5 font-bold shadow-[4px_4px_0_#111] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0_#111]">Kirim pesan</button>
+                <a href="https://drive.google.com/file/d/1J25DC3cPnBpp4HVp9Q1E7zVIKj7rE765/view?usp=sharing" class="rounded-full bg-ink px-6 py-2.5 font-bold text-white shadow-[4px_4px_0_#FFDD55]">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-ink px-6 py-10 text-center text-sm text-white">
+        <p class="text-smvtext-white/70">Dukung saya dengan secangkir kopi!</p>
+        <a href="#" target="_blank"  class="mt-4 inline-flex items-center gap-2 rounded-full border-2 border-ink bg-brand px-6 py-3 font-extrabold text-ink shadow-[5px_5px_0_#F4A6D7] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[3px_3px_0_#F4A6D7]"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8zM16 10h2a2.5 2.5 0 0 1 0 5h-2M7 3v2M10 3v2M13 3v2"/></svg> Get me a coffee</a>
+
+        <p class="mt-8 text-sm text-white/60">© 2026 ProErMi. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

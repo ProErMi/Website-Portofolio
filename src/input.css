@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@theme {
+    --color-brand: #FFDD55;
+    --color-teal: #00C9AE;
+    --color-cream: #FFFDF0;
+    --color-ink: #111111;
+    --color-sky: #BDE8FF;
+    --color-pinky: #F4A6D7;
+    --font-sans: "Montserrat", sans-serif;
+}
